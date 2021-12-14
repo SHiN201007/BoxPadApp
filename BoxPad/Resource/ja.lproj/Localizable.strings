@@ -15,3 +15,9 @@
 "library_accsess_message" = "『設定』でフォトライブラリへのアクセスを許可してください";
 "library_accsess_settingButton" = "設定へ";
 "library_accsess_closeButton" = "閉じる";
+
+"library_usage_title" = "アイテムの画像を登録しましょう";
+"library_usage_message" = "フォトライブラリから対象のアイテムを挿入してください";
+"library_usage_camera" = "カメラを起動";
+"library_usage_library" = "フォトライブラリを開く";
+"library_usage_cancel" = "キャンセル";
