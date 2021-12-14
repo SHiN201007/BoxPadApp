@@ -35,6 +35,9 @@
 		06BFA810276850030071E816 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80F276850030071E816 /* ProgressHUD.swift */; };
 		06BFA81227685F880071E816 /* LibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA81127685F880071E816 /* LibraryManager.swift */; };
 		06BFA814276861970071E816 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA813276861970071E816 /* AlertManager.swift */; };
+		06BFA81827687D730071E816 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA81627687D730071E816 /* DetailViewController.swift */; };
+		06BFA81927687D730071E816 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA81727687D730071E816 /* DetailViewController.xib */; };
+		06BFA81B27687D7B0071E816 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA81A27687D7B0071E816 /* DetailViewModel.swift */; };
 		169C3B19F851C37EAA4C9E74 /* Pods_BoxPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBE9065EEE1BB6AEED8124F /* Pods_BoxPad.framework */; };
 		828B3C2077C40D538021DF86 /* Pods_BoxPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */; };
 		ADA4322B9E72D833456ECBE2 /* Pods_BoxPad_BoxPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */; };
@@ -92,6 +95,9 @@
 		06BFA80F276850030071E816 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		06BFA81127685F880071E816 /* LibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryManager.swift; sourceTree = "<group>"; };
 		06BFA813276861970071E816 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		06BFA81627687D730071E816 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		06BFA81727687D730071E816 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		06BFA81A27687D7B0071E816 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		352D5635A08CD23D2B1230F8 /* Pods-BoxPad-BoxPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad-BoxPadUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPad_BoxPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +200,7 @@
 				06BFA7E42767087B0071E816 /* Base */,
 				06BFA7DA276707820071E816 /* Home */,
 				06BFA80027672F890071E816 /* Add */,
+				06BFA81527687D570071E816 /* Detail */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -291,6 +298,16 @@
 				06BFA80327681F2C0071E816 /* ItemTableViewCell.xib */,
 			);
 			path = Item;
+			sourceTree = "<group>";
+		};
+		06BFA81527687D570071E816 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA81627687D730071E816 /* DetailViewController.swift */,
+				06BFA81727687D730071E816 /* DetailViewController.xib */,
+				06BFA81A27687D7B0071E816 /* DetailViewModel.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		290C6FF05B0CAFE1B1564CBE /* Frameworks */ = {
@@ -428,6 +445,7 @@
 				06BFA7FF27672E5B0071E816 /* AddViewController.xib in Resources */,
 				06BFA7ED276721090071E816 /* Localizable.strings in Resources */,
 				06BFA7E7276720530071E816 /* Images.xcassets in Resources */,
+				06BFA81927687D730071E816 /* DetailViewController.xib in Resources */,
 				06BFA7E92767205F0071E816 /* Colors.xcassets in Resources */,
 				06BFA7B62767076F0071E816 /* LaunchScreen.storyboard in Resources */,
 				06BFA80527681F2C0071E816 /* ItemTableViewCell.xib in Resources */,
@@ -566,6 +584,7 @@
 				06BFA80C27683F660071E816 /* CellUtil.swift in Sources */,
 				06BFA7FE27672E5B0071E816 /* AddViewController.swift in Sources */,
 				06BFA810276850030071E816 /* ProgressHUD.swift in Sources */,
+				06BFA81827687D730071E816 /* DetailViewController.swift in Sources */,
 				06BFA80427681F2C0071E816 /* ItemTableViewCell.swift in Sources */,
 				06BFA7F6276721320071E816 /* Strings.swift in Sources */,
 				06BFA814276861970071E816 /* AlertManager.swift in Sources */,
@@ -574,6 +593,7 @@
 				06BFA80827681F7D0071E816 /* HomeViewModel.swift in Sources */,
 				06BFA7AC2767076E0071E816 /* SceneDelegate.swift in Sources */,
 				06BFA7F7276721320071E816 /* StoryboardSegues.swift in Sources */,
+				06BFA81B27687D7B0071E816 /* DetailViewModel.swift in Sources */,
 				06BFA7DD2767079F0071E816 /* HomeViewController.swift in Sources */,
 				06BFA80A276839DD0071E816 /* ItemModel.swift in Sources */,
 				06BFA7F4276721320071E816 /* StoryboardScenes.swift in Sources */,

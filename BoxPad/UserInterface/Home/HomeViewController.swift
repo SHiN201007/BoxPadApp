@@ -72,6 +72,10 @@ class HomeViewController: UIViewController {
         tableView.rx.itemSelected
             .bind(to: Binder(self) { me, indexPath in
                 me.tableView.deselectRow(at: indexPath, animated: true)
+                let item = me.dataSource[indexPath]
+                let vc = DetailViewController()
+                vc.title = item.itemName
+                me.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: disposeBag)
         
