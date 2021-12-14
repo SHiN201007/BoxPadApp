@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="BoxPad" customModuleProvider="target">
             <connections>
                 <outlet property="addButton" destination="w4d-3I-sDl" id="PtQ-0G-69L"/>
+                <outlet property="tableView" destination="Swy-l3-FvX" id="cWw-w2-NMy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

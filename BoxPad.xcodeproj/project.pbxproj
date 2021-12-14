@@ -26,6 +26,11 @@
 		06BFA7FA2767216B0071E816 /* AnyObject+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7F92767216B0071E816 /* AnyObject+Then.swift */; };
 		06BFA7FE27672E5B0071E816 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7FC27672E5B0071E816 /* AddViewController.swift */; };
 		06BFA7FF27672E5B0071E816 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7FD27672E5B0071E816 /* AddViewController.xib */; };
+		06BFA80427681F2C0071E816 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80227681F2C0071E816 /* ItemTableViewCell.swift */; };
+		06BFA80527681F2C0071E816 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA80327681F2C0071E816 /* ItemTableViewCell.xib */; };
+		06BFA80827681F7D0071E816 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80727681F7D0071E816 /* HomeViewModel.swift */; };
+		06BFA80A276839DD0071E816 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA809276839DD0071E816 /* ItemModel.swift */; };
+		06BFA80C27683F660071E816 /* CellUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80B27683F660071E816 /* CellUtil.swift */; };
 		169C3B19F851C37EAA4C9E74 /* Pods_BoxPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBE9065EEE1BB6AEED8124F /* Pods_BoxPad.framework */; };
 		828B3C2077C40D538021DF86 /* Pods_BoxPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */; };
 		ADA4322B9E72D833456ECBE2 /* Pods_BoxPad_BoxPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */; };
@@ -74,6 +79,11 @@
 		06BFA7F92767216B0071E816 /* AnyObject+Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyObject+Then.swift"; sourceTree = "<group>"; };
 		06BFA7FC27672E5B0071E816 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		06BFA7FD27672E5B0071E816 /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		06BFA80227681F2C0071E816 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		06BFA80327681F2C0071E816 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		06BFA80727681F7D0071E816 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		06BFA809276839DD0071E816 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		06BFA80B27683F660071E816 /* CellUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellUtil.swift; sourceTree = "<group>"; };
 		352D5635A08CD23D2B1230F8 /* Pods-BoxPad-BoxPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad-BoxPadUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPad_BoxPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +155,7 @@
 				06BFA7F8276721430071E816 /* Extensions */,
 				06BFA7FB2767217D0071E816 /* Models */,
 				06BFA7D9276707790071E816 /* UserInterface */,
+				06BFA80127681F140071E816 /* Views */,
 				06BFA7B42767076F0071E816 /* LaunchScreen.storyboard */,
 				06BFA7B72767076F0071E816 /* Info.plist */,
 			);
@@ -184,6 +195,7 @@
 			children = (
 				06BFA7DB2767079F0071E816 /* HomeViewController.swift */,
 				06BFA7DC2767079F0071E816 /* HomeViewController.xib */,
+				06BFA80727681F7D0071E816 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -192,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				06BFA7E0276708140071E816 /* TabbarUtil.swift */,
+				06BFA80B27683F660071E816 /* CellUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -237,6 +250,7 @@
 		06BFA7FB2767217D0071E816 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				06BFA809276839DD0071E816 /* ItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +262,23 @@
 				06BFA7FD27672E5B0071E816 /* AddViewController.xib */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		06BFA80127681F140071E816 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA80627681F300071E816 /* Item */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06BFA80627681F300071E816 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA80227681F2C0071E816 /* ItemTableViewCell.swift */,
+				06BFA80327681F2C0071E816 /* ItemTableViewCell.xib */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 		290C6FF05B0CAFE1B1564CBE /* Frameworks */ = {
@@ -387,6 +418,7 @@
 				06BFA7E7276720530071E816 /* Images.xcassets in Resources */,
 				06BFA7E92767205F0071E816 /* Colors.xcassets in Resources */,
 				06BFA7B62767076F0071E816 /* LaunchScreen.storyboard in Resources */,
+				06BFA80527681F2C0071E816 /* ItemTableViewCell.xib in Resources */,
 				06BFA7DE2767079F0071E816 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,13 +550,17 @@
 				06BFA7FA2767216B0071E816 /* AnyObject+Then.swift in Sources */,
 				06BFA7E3276708750071E816 /* MainNavigationViewController.swift in Sources */,
 				06BFA7F5276721320071E816 /* Asset.swift in Sources */,
+				06BFA80C27683F660071E816 /* CellUtil.swift in Sources */,
 				06BFA7FE27672E5B0071E816 /* AddViewController.swift in Sources */,
+				06BFA80427681F2C0071E816 /* ItemTableViewCell.swift in Sources */,
 				06BFA7F6276721320071E816 /* Strings.swift in Sources */,
 				06BFA7AA2767076E0071E816 /* AppDelegate.swift in Sources */,
 				06BFA7E1276708140071E816 /* TabbarUtil.swift in Sources */,
+				06BFA80827681F7D0071E816 /* HomeViewModel.swift in Sources */,
 				06BFA7AC2767076E0071E816 /* SceneDelegate.swift in Sources */,
 				06BFA7F7276721320071E816 /* StoryboardSegues.swift in Sources */,
 				06BFA7DD2767079F0071E816 /* HomeViewController.swift in Sources */,
+				06BFA80A276839DD0071E816 /* ItemModel.swift in Sources */,
 				06BFA7F4276721320071E816 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
