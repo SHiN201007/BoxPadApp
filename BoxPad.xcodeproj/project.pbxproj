@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06BFA7AA2767076E0071E816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7A92767076E0071E816 /* AppDelegate.swift */; };
+		06BFA7AC2767076E0071E816 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7AB2767076E0071E816 /* SceneDelegate.swift */; };
+		06BFA7B62767076F0071E816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7B42767076F0071E816 /* LaunchScreen.storyboard */; };
+		06BFA7C12767076F0071E816 /* BoxPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7C02767076F0071E816 /* BoxPadTests.swift */; };
+		06BFA7CC2767076F0071E816 /* BoxPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7CB2767076F0071E816 /* BoxPadUITests.swift */; };
+		06BFA7DD2767079F0071E816 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7DB2767079F0071E816 /* HomeViewController.swift */; };
+		06BFA7DE2767079F0071E816 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7DC2767079F0071E816 /* HomeViewController.xib */; };
+		06BFA7E1276708140071E816 /* TabbarUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7E0276708140071E816 /* TabbarUtil.swift */; };
+		06BFA7E3276708750071E816 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7E2276708750071E816 /* MainNavigationViewController.swift */; };
+		06BFA7E7276720530071E816 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7E6276720530071E816 /* Images.xcassets */; };
+		06BFA7E92767205F0071E816 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7E82767205F0071E816 /* Colors.xcassets */; };
+		06BFA7ED276721090071E816 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7EF276721090071E816 /* Localizable.strings */; };
+		06BFA7F4276721320071E816 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7F0276721310071E816 /* StoryboardScenes.swift */; };
+		06BFA7F5276721320071E816 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7F1276721310071E816 /* Asset.swift */; };
+		06BFA7F6276721320071E816 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7F2276721310071E816 /* Strings.swift */; };
+		06BFA7F7276721320071E816 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7F3276721310071E816 /* StoryboardSegues.swift */; };
+		06BFA7FA2767216B0071E816 /* AnyObject+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7F92767216B0071E816 /* AnyObject+Then.swift */; };
+		06BFA7FE27672E5B0071E816 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA7FC27672E5B0071E816 /* AddViewController.swift */; };
+		06BFA7FF27672E5B0071E816 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA7FD27672E5B0071E816 /* AddViewController.xib */; };
+		169C3B19F851C37EAA4C9E74 /* Pods_BoxPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBE9065EEE1BB6AEED8124F /* Pods_BoxPad.framework */; };
+		828B3C2077C40D538021DF86 /* Pods_BoxPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */; };
+		ADA4322B9E72D833456ECBE2 /* Pods_BoxPad_BoxPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06BFA7BD2767076F0071E816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BFA79E2767076E0071E816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BFA7A52767076E0071E816;
+			remoteInfo = BoxPad;
+		};
+		06BFA7C82767076F0071E816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BFA79E2767076E0071E816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BFA7A52767076E0071E816;
+			remoteInfo = BoxPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06BFA7A62767076E0071E816 /* BoxPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BFA7A92767076E0071E816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06BFA7AB2767076E0071E816 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		06BFA7B52767076F0071E816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06BFA7B72767076F0071E816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BFA7BC2767076F0071E816 /* BoxPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BFA7C02767076F0071E816 /* BoxPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxPadTests.swift; sourceTree = "<group>"; };
+		06BFA7C22767076F0071E816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BFA7C72767076F0071E816 /* BoxPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BFA7CB2767076F0071E816 /* BoxPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxPadUITests.swift; sourceTree = "<group>"; };
+		06BFA7CD2767076F0071E816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BFA7DB2767079F0071E816 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06BFA7DC2767079F0071E816 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		06BFA7E0276708140071E816 /* TabbarUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarUtil.swift; sourceTree = "<group>"; };
+		06BFA7E2276708750071E816 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		06BFA7E6276720530071E816 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06BFA7E82767205F0071E816 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		06BFA7EE276721090071E816 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		06BFA7F0276721310071E816 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		06BFA7F1276721310071E816 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		06BFA7F2276721310071E816 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		06BFA7F3276721310071E816 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		06BFA7F92767216B0071E816 /* AnyObject+Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyObject+Then.swift"; sourceTree = "<group>"; };
+		06BFA7FC27672E5B0071E816 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		06BFA7FD27672E5B0071E816 /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		352D5635A08CD23D2B1230F8 /* Pods-BoxPad-BoxPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad-BoxPadUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPad_BoxPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B4DA2B2EF4474606E502D6 /* Pods-BoxPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPadTests.release.xcconfig"; path = "Target Support Files/Pods-BoxPadTests/Pods-BoxPadTests.release.xcconfig"; sourceTree = "<group>"; };
+		83841423EED26E45456AC547 /* Pods-BoxPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad.debug.xcconfig"; path = "Target Support Files/Pods-BoxPad/Pods-BoxPad.debug.xcconfig"; sourceTree = "<group>"; };
+		8FBE9065EEE1BB6AEED8124F /* Pods_BoxPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		948D87FD917B26951A50B9E4 /* Pods-BoxPad-BoxPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad-BoxPadUITests.release.xcconfig"; path = "Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BCD1CCA0CE456361B66AE6EF /* Pods-BoxPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad.release.xcconfig"; path = "Target Support Files/Pods-BoxPad/Pods-BoxPad.release.xcconfig"; sourceTree = "<group>"; };
+		EBE32A1486F2F0886476AEE1 /* Pods-BoxPadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPadTests.debug.xcconfig"; path = "Target Support Files/Pods-BoxPadTests/Pods-BoxPadTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06BFA7A32767076E0071E816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C3B19F851C37EAA4C9E74 /* Pods_BoxPad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA7B92767076F0071E816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828B3C2077C40D538021DF86 /* Pods_BoxPadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA7C42767076F0071E816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA4322B9E72D833456ECBE2 /* Pods_BoxPad_BoxPadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BFA79D2767076E0071E816 = {
+			isa = PBXGroup;
+			children = (
+				06BFA7A82767076E0071E816 /* BoxPad */,
+				06BFA7BF2767076F0071E816 /* BoxPadTests */,
+				06BFA7CA2767076F0071E816 /* BoxPadUITests */,
+				06BFA7A72767076E0071E816 /* Products */,
+				2F7CEB50847DF4181A7779DA /* Pods */,
+				290C6FF05B0CAFE1B1564CBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06BFA7A72767076E0071E816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7A62767076E0071E816 /* BoxPad.app */,
+				06BFA7BC2767076F0071E816 /* BoxPadTests.xctest */,
+				06BFA7C72767076F0071E816 /* BoxPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06BFA7A82767076E0071E816 /* BoxPad */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7A92767076E0071E816 /* AppDelegate.swift */,
+				06BFA7EA276720700071E816 /* Generated */,
+				06BFA7E527671FD90071E816 /* Resource */,
+				06BFA7DF276708060071E816 /* Utils */,
+				06BFA7F8276721430071E816 /* Extensions */,
+				06BFA7FB2767217D0071E816 /* Models */,
+				06BFA7D9276707790071E816 /* UserInterface */,
+				06BFA7B42767076F0071E816 /* LaunchScreen.storyboard */,
+				06BFA7B72767076F0071E816 /* Info.plist */,
+			);
+			path = BoxPad;
+			sourceTree = "<group>";
+		};
+		06BFA7BF2767076F0071E816 /* BoxPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7C02767076F0071E816 /* BoxPadTests.swift */,
+				06BFA7C22767076F0071E816 /* Info.plist */,
+			);
+			path = BoxPadTests;
+			sourceTree = "<group>";
+		};
+		06BFA7CA2767076F0071E816 /* BoxPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7CB2767076F0071E816 /* BoxPadUITests.swift */,
+				06BFA7CD2767076F0071E816 /* Info.plist */,
+			);
+			path = BoxPadUITests;
+			sourceTree = "<group>";
+		};
+		06BFA7D9276707790071E816 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7E42767087B0071E816 /* Base */,
+				06BFA7DA276707820071E816 /* Home */,
+				06BFA80027672F890071E816 /* Add */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		06BFA7DA276707820071E816 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7DB2767079F0071E816 /* HomeViewController.swift */,
+				06BFA7DC2767079F0071E816 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		06BFA7DF276708060071E816 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7E0276708140071E816 /* TabbarUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		06BFA7E42767087B0071E816 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7AB2767076E0071E816 /* SceneDelegate.swift */,
+				06BFA7E2276708750071E816 /* MainNavigationViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		06BFA7E527671FD90071E816 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7E6276720530071E816 /* Images.xcassets */,
+				06BFA7E82767205F0071E816 /* Colors.xcassets */,
+				06BFA7EF276721090071E816 /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		06BFA7EA276720700071E816 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7F1276721310071E816 /* Asset.swift */,
+				06BFA7F0276721310071E816 /* StoryboardScenes.swift */,
+				06BFA7F3276721310071E816 /* StoryboardSegues.swift */,
+				06BFA7F2276721310071E816 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		06BFA7F8276721430071E816 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7F92767216B0071E816 /* AnyObject+Then.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		06BFA7FB2767217D0071E816 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06BFA80027672F890071E816 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA7FC27672E5B0071E816 /* AddViewController.swift */,
+				06BFA7FD27672E5B0071E816 /* AddViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		290C6FF05B0CAFE1B1564CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE9065EEE1BB6AEED8124F /* Pods_BoxPad.framework */,
+				632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */,
+				5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F7CEB50847DF4181A7779DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83841423EED26E45456AC547 /* Pods-BoxPad.debug.xcconfig */,
+				BCD1CCA0CE456361B66AE6EF /* Pods-BoxPad.release.xcconfig */,
+				352D5635A08CD23D2B1230F8 /* Pods-BoxPad-BoxPadUITests.debug.xcconfig */,
+				948D87FD917B26951A50B9E4 /* Pods-BoxPad-BoxPadUITests.release.xcconfig */,
+				EBE32A1486F2F0886476AEE1 /* Pods-BoxPadTests.debug.xcconfig */,
+				72B4DA2B2EF4474606E502D6 /* Pods-BoxPadTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06BFA7A52767076E0071E816 /* BoxPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BFA7D02767076F0071E816 /* Build configuration list for PBXNativeTarget "BoxPad" */;
+			buildPhases = (
+				9323E6AC700C087AC2743E84 /* [CP] Check Pods Manifest.lock */,
+				06BFA7A22767076E0071E816 /* Sources */,
+				06BFA7A32767076E0071E816 /* Frameworks */,
+				06BFA7A42767076E0071E816 /* Resources */,
+				FCAE0E69856BBA2EF093D48F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxPad;
+			productName = BoxPad;
+			productReference = 06BFA7A62767076E0071E816 /* BoxPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06BFA7BB2767076F0071E816 /* BoxPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BFA7D32767076F0071E816 /* Build configuration list for PBXNativeTarget "BoxPadTests" */;
+			buildPhases = (
+				E6ADEE63045B70050FA71F98 /* [CP] Check Pods Manifest.lock */,
+				06BFA7B82767076F0071E816 /* Sources */,
+				06BFA7B92767076F0071E816 /* Frameworks */,
+				06BFA7BA2767076F0071E816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BFA7BE2767076F0071E816 /* PBXTargetDependency */,
+			);
+			name = BoxPadTests;
+			productName = BoxPadTests;
+			productReference = 06BFA7BC2767076F0071E816 /* BoxPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06BFA7C62767076F0071E816 /* BoxPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BFA7D62767076F0071E816 /* Build configuration list for PBXNativeTarget "BoxPadUITests" */;
+			buildPhases = (
+				8340750651BB7BDD176B0EDD /* [CP] Check Pods Manifest.lock */,
+				06BFA7C32767076F0071E816 /* Sources */,
+				06BFA7C42767076F0071E816 /* Frameworks */,
+				06BFA7C52767076F0071E816 /* Resources */,
+				BA859BF0354516CED8BACEFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BFA7C92767076F0071E816 /* PBXTargetDependency */,
+			);
+			name = BoxPadUITests;
+			productName = BoxPadUITests;
+			productReference = 06BFA7C72767076F0071E816 /* BoxPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06BFA79E2767076E0071E816 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					06BFA7A52767076E0071E816 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					06BFA7BB2767076F0071E816 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 06BFA7A52767076E0071E816;
+					};
+					06BFA7C62767076F0071E816 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 06BFA7A52767076E0071E816;
+					};
+				};
+			};
+			buildConfigurationList = 06BFA7A12767076E0071E816 /* Build configuration list for PBXProject "BoxPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ja,
+				en,
+				Base,
+			);
+			mainGroup = 06BFA79D2767076E0071E816;
+			productRefGroup = 06BFA7A72767076E0071E816 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06BFA7A52767076E0071E816 /* BoxPad */,
+				06BFA7BB2767076F0071E816 /* BoxPadTests */,
+				06BFA7C62767076F0071E816 /* BoxPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06BFA7A42767076E0071E816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA7FF27672E5B0071E816 /* AddViewController.xib in Resources */,
+				06BFA7ED276721090071E816 /* Localizable.strings in Resources */,
+				06BFA7E7276720530071E816 /* Images.xcassets in Resources */,
+				06BFA7E92767205F0071E816 /* Colors.xcassets in Resources */,
+				06BFA7B62767076F0071E816 /* LaunchScreen.storyboard in Resources */,
+				06BFA7DE2767079F0071E816 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA7BA2767076F0071E816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA7C52767076F0071E816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8340750651BB7BDD176B0EDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxPad-BoxPadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9323E6AC700C087AC2743E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA859BF0354516CED8BACEFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6ADEE63045B70050FA71F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxPadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAE0E69856BBA2EF093D48F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoxPad/Pods-BoxPad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoxPad/Pods-BoxPad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoxPad/Pods-BoxPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06BFA7A22767076E0071E816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA7FA2767216B0071E816 /* AnyObject+Then.swift in Sources */,
+				06BFA7E3276708750071E816 /* MainNavigationViewController.swift in Sources */,
+				06BFA7F5276721320071E816 /* Asset.swift in Sources */,
+				06BFA7FE27672E5B0071E816 /* AddViewController.swift in Sources */,
+				06BFA7F6276721320071E816 /* Strings.swift in Sources */,
+				06BFA7AA2767076E0071E816 /* AppDelegate.swift in Sources */,
+				06BFA7E1276708140071E816 /* TabbarUtil.swift in Sources */,
+				06BFA7AC2767076E0071E816 /* SceneDelegate.swift in Sources */,
+				06BFA7F7276721320071E816 /* StoryboardSegues.swift in Sources */,
+				06BFA7DD2767079F0071E816 /* HomeViewController.swift in Sources */,
+				06BFA7F4276721320071E816 /* StoryboardScenes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA7B82767076F0071E816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA7C12767076F0071E816 /* BoxPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA7C32767076F0071E816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA7CC2767076F0071E816 /* BoxPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06BFA7BE2767076F0071E816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BFA7A52767076E0071E816 /* BoxPad */;
+			targetProxy = 06BFA7BD2767076F0071E816 /* PBXContainerItemProxy */;
+		};
+		06BFA7C92767076F0071E816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BFA7A52767076E0071E816 /* BoxPad */;
+			targetProxy = 06BFA7C82767076F0071E816 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06BFA7B42767076F0071E816 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BFA7B52767076F0071E816 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		06BFA7EF276721090071E816 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BFA7EE276721090071E816 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06BFA7CE2767076F0071E816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06BFA7CF2767076F0071E816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06BFA7D12767076F0071E816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83841423EED26E45456AC547 /* Pods-BoxPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Z774V99;
+				INFOPLIST_FILE = BoxPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i.m-107-sin.BoxPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		06BFA7D22767076F0071E816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD1CCA0CE456361B66AE6EF /* Pods-BoxPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Z774V99;
+				INFOPLIST_FILE = BoxPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i.m-107-sin.BoxPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		06BFA7D42767076F0071E816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE32A1486F2F0886476AEE1 /* Pods-BoxPadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Z774V99;
+				INFOPLIST_FILE = BoxPadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i.m-107-sin.BoxPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxPad.app/BoxPad";
+			};
+			name = Debug;
+		};
+		06BFA7D52767076F0071E816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B4DA2B2EF4474606E502D6 /* Pods-BoxPadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Z774V99;
+				INFOPLIST_FILE = BoxPadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i.m-107-sin.BoxPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxPad.app/BoxPad";
+			};
+			name = Release;
+		};
+		06BFA7D72767076F0071E816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352D5635A08CD23D2B1230F8 /* Pods-BoxPad-BoxPadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Z774V99;
+				INFOPLIST_FILE = BoxPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i.m-107-sin.BoxPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoxPad;
+			};
+			name = Debug;
+		};
+		06BFA7D82767076F0071E816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948D87FD917B26951A50B9E4 /* Pods-BoxPad-BoxPadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Z774V99;
+				INFOPLIST_FILE = BoxPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i.m-107-sin.BoxPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoxPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06BFA7A12767076E0071E816 /* Build configuration list for PBXProject "BoxPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BFA7CE2767076F0071E816 /* Debug */,
+				06BFA7CF2767076F0071E816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BFA7D02767076F0071E816 /* Build configuration list for PBXNativeTarget "BoxPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BFA7D12767076F0071E816 /* Debug */,
+				06BFA7D22767076F0071E816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BFA7D32767076F0071E816 /* Build configuration list for PBXNativeTarget "BoxPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BFA7D42767076F0071E816 /* Debug */,
+				06BFA7D52767076F0071E816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BFA7D62767076F0071E816 /* Build configuration list for PBXNativeTarget "BoxPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BFA7D72767076F0071E816 /* Debug */,
+				06BFA7D82767076F0071E816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06BFA79E2767076E0071E816 /* Project object */;
+}

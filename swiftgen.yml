@@ -1,0 +1,27 @@
+xcassets:
+  inputs:
+    - BoxPad/Resource/Images.xcassets
+    - BoxPad/Resource/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: BoxPad/Generated/Asset.swift
+      params:
+        publicAccess: 1
+    
+strings:
+  inputs: BoxPad/Resource/ja.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: BoxPad/Generated/Strings.swift
+
+ib:
+  inputs:
+    - BoxPad/UserInterface
+  outputs:
+    - templateName: scenes-swift5
+      output: BoxPad/Generated/StoryboardScenes.swift
+      params:
+        ignoreTargetModule: true
+    - templateName: segues-swift5
+      output: BoxPad/Generated/StoryboardSegues.swift
+
