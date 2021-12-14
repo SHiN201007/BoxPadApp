@@ -23,6 +23,8 @@ class AddViewController: UIViewController {
     private var viewModel: AddViewModel!
     private let disposeBag = DisposeBag()
     
+    private let imagePicker = UIImagePickerController()
+    
     private var itemImageTapGesture: UITapGestureRecognizer!
 
     override func viewDidLoad() {
@@ -52,6 +54,11 @@ class AddViewController: UIViewController {
         }
         // save button
         saveButton.layer.cornerRadius = 10.0
+        
+        imagePicker.do {
+            $0.sourceType = .photoLibrary
+            $0.delegate = self
+        }
     }
     
     private func configViewModel() {
@@ -69,7 +76,7 @@ class AddViewController: UIViewController {
     private func bind() {
         itemImageTapGesture.rx.event.asObservable()
             .bind(to: Binder(self) { me, _ in
-                print("tapped")
+                me.showImagePicker()
             })
             .disposed(by: disposeBag)
         
@@ -92,5 +99,33 @@ class AddViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    private func showImagePicker() {
+        LibraryManager.isLibraryAuthorized { [weak self] status in
+            guard let imagePicker = self?.imagePicker else { return }
+            if status {
+                self?.present(imagePicker, animated: true, completion: nil)
+            }else {
+                DispatchQueue.main.async {
+                    let alert = LibraryManager.setupLibraryAccsessAlert()
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
 
+}
+
+extension AddViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            dismiss(animated: true) { [weak self] in
+                self?.itemImageView.image = selectedImage
+            }
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
 }

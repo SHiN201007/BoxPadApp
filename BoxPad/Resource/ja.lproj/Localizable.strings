@@ -8,6 +8,10 @@
 "title_home_page" = "HOME";
 "title_add_page" = "アイテム登録";
 
-
 "add_empty_title" = "タイトルが未入力です";
 "add_send_error" = "アイテム追加に失敗しました\nリトライしてください";
+
+"library_accsess_title" = "フォトライブラリへのアクセスを求めています";
+"library_accsess_message" = "『設定』でフォトライブラリへのアクセスを許可してください";
+"library_accsess_settingButton" = "設定へ";
+"library_accsess_closeButton" = "閉じる";
