@@ -7,3 +7,7 @@
 */
 "title_home_page" = "HOME";
 "title_add_page" = "アイテム登録";
+
+
+"add_empty_title" = "タイトルが未入力です";
+"add_send_error" = "アイテム追加に失敗しました\nリトライしてください";

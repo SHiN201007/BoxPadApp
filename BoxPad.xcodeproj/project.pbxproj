@@ -31,6 +31,8 @@
 		06BFA80827681F7D0071E816 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80727681F7D0071E816 /* HomeViewModel.swift */; };
 		06BFA80A276839DD0071E816 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA809276839DD0071E816 /* ItemModel.swift */; };
 		06BFA80C27683F660071E816 /* CellUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80B27683F660071E816 /* CellUtil.swift */; };
+		06BFA80E276844720071E816 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80D276844720071E816 /* AddViewModel.swift */; };
+		06BFA810276850030071E816 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA80F276850030071E816 /* ProgressHUD.swift */; };
 		169C3B19F851C37EAA4C9E74 /* Pods_BoxPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBE9065EEE1BB6AEED8124F /* Pods_BoxPad.framework */; };
 		828B3C2077C40D538021DF86 /* Pods_BoxPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */; };
 		ADA4322B9E72D833456ECBE2 /* Pods_BoxPad_BoxPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */; };
@@ -84,6 +86,8 @@
 		06BFA80727681F7D0071E816 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		06BFA809276839DD0071E816 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		06BFA80B27683F660071E816 /* CellUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellUtil.swift; sourceTree = "<group>"; };
+		06BFA80D276844720071E816 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
+		06BFA80F276850030071E816 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		352D5635A08CD23D2B1230F8 /* Pods-BoxPad-BoxPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxPad-BoxPadUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoxPad-BoxPadUITests/Pods-BoxPad-BoxPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E96BE4B7DEF534BA8F7793D /* Pods_BoxPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632E607B75BA58D76B08B88C /* Pods_BoxPad_BoxPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxPad_BoxPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +209,7 @@
 			children = (
 				06BFA7E0276708140071E816 /* TabbarUtil.swift */,
 				06BFA80B27683F660071E816 /* CellUtil.swift */,
+				06BFA80F276850030071E816 /* ProgressHUD.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			children = (
 				06BFA7FC27672E5B0071E816 /* AddViewController.swift */,
 				06BFA7FD27672E5B0071E816 /* AddViewController.xib */,
+				06BFA80D276844720071E816 /* AddViewModel.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -549,9 +555,11 @@
 			files = (
 				06BFA7FA2767216B0071E816 /* AnyObject+Then.swift in Sources */,
 				06BFA7E3276708750071E816 /* MainNavigationViewController.swift in Sources */,
+				06BFA80E276844720071E816 /* AddViewModel.swift in Sources */,
 				06BFA7F5276721320071E816 /* Asset.swift in Sources */,
 				06BFA80C27683F660071E816 /* CellUtil.swift in Sources */,
 				06BFA7FE27672E5B0071E816 /* AddViewController.swift in Sources */,
+				06BFA810276850030071E816 /* ProgressHUD.swift in Sources */,
 				06BFA80427681F2C0071E816 /* ItemTableViewCell.swift in Sources */,
 				06BFA7F6276721320071E816 /* Strings.swift in Sources */,
 				06BFA7AA2767076E0071E816 /* AppDelegate.swift in Sources */,

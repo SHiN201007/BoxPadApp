@@ -10,6 +10,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// タイトルが未入力です
+  internal static let addEmptyTitle = L10n.tr("Localizable", "add_empty_title")
+  /// アイテム追加に失敗しました\nリトライしてください
+  internal static let addSendError = L10n.tr("Localizable", "add_send_error")
   /// アイテム登録
   internal static let titleAddPage = L10n.tr("Localizable", "title_add_page")
   /// HOME
