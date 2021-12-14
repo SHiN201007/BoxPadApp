@@ -100,17 +100,17 @@ class AddViewController: UIViewController {
     }
     
     private func showUsageLibraryAlert() {
-        let camera = UIAlertAction(title: "カメラを起動", style: .default) { [weak self] _ in
+        let camera = UIAlertAction(title: L10n.libraryUsageCamera, style: .default) { [weak self] _ in
             self?.showCameraPicker()
         }
-        let library = UIAlertAction(title: "フォトライブラリを開く", style: .default) { [weak self] _ in
+        let library = UIAlertAction(title: L10n.libraryUsageLibrary, style: .default) { [weak self] _ in
             self?.showLiberayPicker()
         }
-        let close = UIAlertAction(title: "キャンセル", style: .cancel)
+        let close = UIAlertAction(title: L10n.libraryUsageCancel, style: .cancel)
         
         let alert = AlertManager.setupAlert(
-            title: "アイテムの画像を登録しましょう",
-            message: "フォトライブラリから対象のアイテムを挿入してください",
+            title: L10n.libraryUsageTitle,
+            message: L10n.libraryUsageMessage,
             style: .actionSheet,
             actions: [camera, library, close]
         )

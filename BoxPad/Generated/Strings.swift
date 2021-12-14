@@ -22,6 +22,16 @@ internal enum L10n {
   internal static let libraryAccsessSettingButton = L10n.tr("Localizable", "library_accsess_settingButton")
   /// フォトライブラリへのアクセスを求めています
   internal static let libraryAccsessTitle = L10n.tr("Localizable", "library_accsess_title")
+  /// カメラを起動
+  internal static let libraryUsageCamera = L10n.tr("Localizable", "library_usage_camera")
+  /// キャンセル
+  internal static let libraryUsageCancel = L10n.tr("Localizable", "library_usage_cancel")
+  /// フォトライブラリを開く
+  internal static let libraryUsageLibrary = L10n.tr("Localizable", "library_usage_library")
+  /// フォトライブラリから対象のアイテムを挿入してください
+  internal static let libraryUsageMessage = L10n.tr("Localizable", "library_usage_message")
+  /// アイテムの画像を登録しましょう
+  internal static let libraryUsageTitle = L10n.tr("Localizable", "library_usage_title")
   /// アイテム登録
   internal static let titleAddPage = L10n.tr("Localizable", "title_add_page")
   /// HOME
