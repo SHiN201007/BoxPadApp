@@ -56,7 +56,6 @@ class AddViewController: UIViewController {
         saveButton.layer.cornerRadius = 10.0
         
         imagePicker.do {
-            $0.sourceType = .photoLibrary
             $0.delegate = self
         }
     }
@@ -76,7 +75,7 @@ class AddViewController: UIViewController {
     private func bind() {
         itemImageTapGesture.rx.event.asObservable()
             .bind(to: Binder(self) { me, _ in
-                me.showImagePicker()
+                me.showUsageLibraryAlert()
             })
             .disposed(by: disposeBag)
         
@@ -100,8 +99,42 @@ class AddViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
-    private func showImagePicker() {
+    private func showUsageLibraryAlert() {
+        let camera = UIAlertAction(title: "カメラを起動", style: .default) { [weak self] _ in
+            self?.showCameraPicker()
+        }
+        let library = UIAlertAction(title: "フォトライブラリを開く", style: .default) { [weak self] _ in
+            self?.showLiberayPicker()
+        }
+        let close = UIAlertAction(title: "キャンセル", style: .cancel)
+        
+        let alert = AlertManager.setupAlert(
+            title: "アイテムの画像を登録しましょう",
+            message: "フォトライブラリから対象のアイテムを挿入してください",
+            style: .actionSheet,
+            actions: [camera, library, close]
+        )
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func showLiberayPicker() {
+        imagePicker.sourceType = .photoLibrary
         LibraryManager.isLibraryAuthorized { [weak self] status in
+            guard let imagePicker = self?.imagePicker else { return }
+            if status {
+                self?.present(imagePicker, animated: true, completion: nil)
+            }else {
+                DispatchQueue.main.async {
+                    let alert = LibraryManager.setupLibraryAccsessAlert()
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
+    private func showCameraPicker() {
+        imagePicker.sourceType = .camera
+        LibraryManager.isCameraAuthorized { [weak self] status in
             guard let imagePicker = self?.imagePicker else { return }
             if status {
                 self?.present(imagePicker, animated: true, completion: nil)

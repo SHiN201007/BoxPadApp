@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 import Photos
 
 class LibraryManager {
@@ -15,6 +16,16 @@ class LibraryManager {
             PHPhotoLibrary.requestAuthorization { status in
                 let isAuthorized = status == .authorized ? true : false
                 hundler(isAuthorized)
+            }
+        }else {
+            hundler(true)
+        }
+    }
+    
+    static func isCameraAuthorized(hundler: @escaping(Bool) -> Void) {
+        if AVCaptureDevice.authorizationStatus(for: .video) != .authorized {
+            AVCaptureDevice.requestAccess(for: .video) { granted in
+                hundler(granted)
             }
         }else {
             hundler(true)
